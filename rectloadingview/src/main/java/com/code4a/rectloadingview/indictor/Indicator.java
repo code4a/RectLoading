@@ -30,6 +30,7 @@ public abstract class Indicator extends Drawable implements Animatable {
     private boolean mHasAnimators;
 
     protected int dotCount = 4;
+    protected int animationDuration = 4000;
     protected int[] mColors = new int[]{0xB07ECBDA, 0xB0E6A92C, 0xB0D6014D, 0xB05ABA94};
     private Paint mPaint = new Paint();
 
@@ -47,6 +48,10 @@ public abstract class Indicator extends Drawable implements Animatable {
         dotCount = count < 5 ? count : 4;
     }
 
+    public void setAnimationDuration(int animationDuration) {
+        this.animationDuration = animationDuration;
+    }
+
     /**
      * updateColors(0xFF00FF00)
      * or
@@ -57,7 +62,6 @@ public abstract class Indicator extends Drawable implements Animatable {
      * updateColors(0xFF00FF00)
      * or
      * updateColors(getResources().getColor(android.R.color.black))
-     *
      */
     public void updateColors(@ColorInt int leftTop, @ColorInt int leftBottom, @ColorInt int rightBottom, @ColorInt int rightTop) {
         mColors[0] = leftTop;

@@ -50,7 +50,7 @@ public class RectTransitionIndicator extends Indicator {
                 translationXAnim = ValueAnimator.ofFloat(getWidth() - startX, getWidth() - startX, startX, startX, getWidth() - startX);
             }
             translationXAnim.setInterpolator(new LinearInterpolator());
-            translationXAnim.setDuration(4000);
+            translationXAnim.setDuration(animationDuration);
             translationXAnim.setRepeatCount(-1);
             addUpdateListener(translationXAnim, new ValueAnimator.AnimatorUpdateListener() {
                 @Override
@@ -68,7 +68,7 @@ public class RectTransitionIndicator extends Indicator {
             } else if (i == 3) {
                 translationYAnim = ValueAnimator.ofFloat(startY, getHeight() - startY, getHeight() - startY, startY, startY);
             }
-            translationYAnim.setDuration(4000);
+            translationYAnim.setDuration(animationDuration);
             translationYAnim.setInterpolator(new LinearInterpolator());
             translationYAnim.setRepeatCount(-1);
             addUpdateListener(translationYAnim, new ValueAnimator.AnimatorUpdateListener() {

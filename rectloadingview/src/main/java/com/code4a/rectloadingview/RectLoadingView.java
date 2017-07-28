@@ -140,6 +140,10 @@ public class RectLoadingView extends View {
         mIndicator.setDotCount(count);
     }
 
+    public void setAnimationDuration(int duration) {
+        mIndicator.setAnimationDuration(duration);
+    }
+
     public void updateColors(@ColorInt int leftTop, @ColorInt int leftBottom, @ColorInt int rightBottom, @ColorInt int rightTop) {
         dotLeftTopColor = leftTop;
         dotLeftBottomColor = leftBottom;
