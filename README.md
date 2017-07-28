@@ -12,7 +12,7 @@ Add dependencies in build.gradle.
 
 ```
     dependencies {
-       compile 'com.code4a:rectloading:0.0.2'
+       compile 'com.code4a:rectloading:0.0.3'
     }
 ```
 

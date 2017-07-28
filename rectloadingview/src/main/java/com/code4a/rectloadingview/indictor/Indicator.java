@@ -62,6 +62,11 @@ public abstract class Indicator extends Drawable implements Animatable {
      * updateColors(0xFF00FF00)
      * or
      * updateColors(getResources().getColor(android.R.color.black))
+     *
+     * @param leftTop     左上角
+     * @param leftBottom  左下角
+     * @param rightBottom 右下角
+     * @param rightTop    右上角
      */
     public void updateColors(@ColorInt int leftTop, @ColorInt int leftBottom, @ColorInt int rightBottom, @ColorInt int rightTop) {
         mColors[0] = leftTop;
@@ -173,7 +178,8 @@ public abstract class Indicator extends Drawable implements Animatable {
      * create animator , otherwise , animator doesn't work when
      * the animation restart .
      *
-     * @param updateListener
+     * @param animator       ValueAnimator
+     * @param updateListener 更新动画监听
      */
     public void addUpdateListener(ValueAnimator animator, ValueAnimator.AnimatorUpdateListener updateListener) {
         mUpdateListeners.put(animator, updateListener);

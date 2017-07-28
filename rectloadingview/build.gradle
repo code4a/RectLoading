@@ -34,7 +34,7 @@ publish {
     userOrg = 'code4a'//bintray.com用户名
     groupId = 'com.code4a'//jcenter上的路径
     artifactId = 'rectloading'//项目名称
-    publishVersion = '0.0.2'//版本号
+    publishVersion = '0.0.4'//版本号
     desc = 'Rect Loading View'
     website = 'https://github.com/code4a/RectLoading'
 }
