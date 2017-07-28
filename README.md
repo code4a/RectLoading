@@ -8,6 +8,16 @@ RectLoadingView
 
 ### Step 1
 
+Add dependencies in build.gradle.
+
+```
+    dependencies {
+       compile 'com.code4a:rectloading:0.0.1'
+    }
+```
+
+### Step 2
+
 Simple 
 
 ```
@@ -36,7 +46,7 @@ Advance
         />
 ```
 
-### Step 2
+### Step 3
 
 It's very simple use just like .
 ```
