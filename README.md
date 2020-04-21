@@ -74,7 +74,7 @@ It's very simple use just like .
 
 [Email](mailto:jiangyantaodev@163.com)
 
-[My Blog](http://www.code4a.com)
+[My Blog](http://www.jiangyantao.com)
 
 ### License
 ```
